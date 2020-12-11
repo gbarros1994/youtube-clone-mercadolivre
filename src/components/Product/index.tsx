@@ -1,6 +1,7 @@
 import React from "react";
 
 import tshirtImage from '../../assets/tshirt.png';
+import SellerInfo from "../SellerInfo";
 
 import { 
   Container,
@@ -25,11 +26,12 @@ const Product: React.FC = () => {
             <img  alt="" src={tshirtImage}/>
           </Gallery>
 
-          {/* <Info /> */}
+          <Info />
         </Column>
 
         <Column>
           {/* <ProductAction></ProductAction> */}
+          <SellerInfo />
 
           <WarrantySection />
           <WarrantySection />
@@ -56,10 +58,11 @@ const WarrantySection = () => (
         <p>Recebe o produto que esta esperando</p>
       </span>
     </div>
+    <a href="">Saiba mais sobre garantia</a>
   </Section>
 );
 
-const info = () => (
+const Info = () => (
   <Description>
     <h2>Descrição</h2>
     <p>
